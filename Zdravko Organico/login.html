@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdravko Organico | Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Change theme color -->
+        <label class="theme-btn" id="textBtn" for="darkModeBtn">Dark Mode</label>
+        <input type="checkbox" id="darkModeBtn">
+        <!-- Main Header -->
+        <header class="my-header">
+            <div class="logo"><img src="./img/ZdravkoOrganico.png" alt="Logo"></div>
+            <!--Main Navigation-->
+            <nav class="my-nav">
+                <ul id="nav-ul"></ul>
+                <div class="ham-menu"><img id="show-hide-menu" src="img/menu.png" alt="Menu"></div>
+            </nav>
+            <!--Main Navigation END-->
+        </header>
+        <!-- Main Header END-->
+    
+        <main>
+            <h1 class="contact-h1">Prijavi se</h1>
+            <div class="form-holder">
+                <form action="index.html" method="post" id="my-form">
+                    <div class="form-group">
+                        <label for="fname">Ime:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Petar">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Prezime:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Petrović">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="petarpetrovic@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Lozinka:</label>
+                        <input type="password" id="password" name="password" placeholder="upišite lozinku">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" id="send-btn" value="Prijavi se">
+                    </div>
+                </form>
+                <div class="error-message"></div>
+            </div>
+        </main>
+    </div>
+    <!-- Main Footer -->
+    <footer class="my-footer">
+        <small>&copy; 2023 Organico by
+            <a target="_blank" href="#"><span>Dajana Pilipovic</span></a>. All Rights
+            Reserved.</small>
+    </footer>
+    <!-- Main Footer END-->
+    <script src="js/login.js"></script>
+</body>
+</html>
